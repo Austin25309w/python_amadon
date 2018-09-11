@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>checked out</title>
+</head>
+<body>
+	
+	<h1>Thank you for your business!</h1>
+	<h4>We charged your credit card for ${{ request.session.item }}</h2>
+	<h4>You have ordered {{ request.session.prices }} orders so far and spent {{request.session.totalAmount }} with Amadon.com!</h4>
+	<a href="/">Go back</a>
+	
+	<!-- <a href="/clear">clear cart</a> -->
+	
+</body>
+</html>

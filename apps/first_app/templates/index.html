@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amadon</title>
+	<style >
+		font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+* {
+	margin: 20px;
+	padding: 40px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+	</style>
+</head>
+<body>
+	<h1>Welcome to Amadon</h1>
+	<table>
+		<tr>
+			<th>Item</th>
+			<th>Price</th>
+			<th>Actions</th>
+		</tr>
+
+		<tr>
+			<td>Dojo Tshirt</td>
+			<td>$19.99</td>
+	<form action='/process' method='post'>
+		{% csrf_token %}
+		<td>
+		<select name='quantity'>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+		<input type='hidden' name="id" value='id1' />
+		<button type='submit'>Buy!</button>
+		</td>
+	</form>
+
+		</tr>
+		<tr>
+			<td>Dojo Sweater</td>
+			<td>$29.99</td>
+	<form action='/process' method='post'>
+		{% csrf_token %}
+		<td>
+		<select name='quantity'>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+		<input type='hidden' name="id" value='id2' />
+		<button type='submit'>Buy!</button>
+	</form>
+	
+		</td>
+		</tr>
+		<tr>
+			<td>Dojo Cup</td>
+			<td>$4.99</td>
+	<form action='/process' method='post'>
+		{% csrf_token %}
+		<td>
+		<select name='quantity'>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+		<input type='hidden' name="id" value='id3' />
+		<button type='submit'>Buy!</button>
+		</td>
+	</form>
+		</tr>
+		<tr>
+			<td>Algorithm Book</td>
+			<td>$49.99</td>
+	<form action='/process' method='post'>
+		{% csrf_token %}
+		<td>
+		<select name='quantity'>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+		<input type='hidden' name="id" value='id4' />
+		<button type='submit'>Buy!</button>
+		</td>
+	</form>
+		</tr>
+	</table>
+	
+
+</body>
+</html>
